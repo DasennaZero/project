@@ -1,0 +1,352 @@
+
+
+body{
+    background: lightgray 0% 0% / 100px 100px repeat;
+    margin: 0;
+    font-family: Open Sans;
+    line-height: normal;
+    font-style: normal;
+    color: #1F1E1E;
+    /* Позиционирование */              
+     /* Блочная модель */
+     /* Рамки и фоны */
+     /* Оформление текста */
+}
+
+.header-page{
+    position: fixed;
+	top: 0;
+	left:0;
+    min-width: 1334px;
+	width: 100%;
+	height:147px;
+	z-index: 100;
+}
+
+.header-page::before{
+    content: "";
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: rgba(222, 222, 222, 0.85);
+	@supports (backdrop-filter: blur(10px)){
+		backdrop-filter: blur(10px);
+		background: rgba(222, 222, 222, 0.85);
+	}	
+}
+
+.header-page__container{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 40px;
+    align-items: center;
+    justify-content:space-between;
+    max-width: 1414px;
+}
+
+.header-page__logo{
+    width: 202px;
+    height: 147px;
+}
+
+.header-page__nav{
+    display: inline-flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-page__nav-link{
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #1F1E1E;
+}
+
+.header-page__btn-enter-account{
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header-page__btn-enter-account__container{
+    padding: 15px 40px;
+    border: 1px solid #1F1E1E;
+    color: #1F1E1E;
+}
+
+
+.home{
+    margin-top: 147px;
+    top: 0;
+	left:0;
+    min-width: 1414px;
+	width: 100%;
+	height:147px;
+	z-index: 100;
+}
+
+.main-header{
+    padding-top: 100px;
+    display: grid;
+    gap: 70px;
+}
+
+.main-header_text{
+    margin: 0 auto;
+	max-width:948px;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Lora", sans-serif;
+	font-weight: 400;
+	font-size: 45px;
+}
+
+.main-header_picture{
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+.main-header_picture::before{
+	content: '';
+	display: block;
+	width: 100%;
+	padding-top: 16.927%;
+}
+
+.main-header_img{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height:100%;
+	object-fit:contain;
+}	
+
+.organize{
+    margin-top: 100px;
+    display: grid;
+    grid-template-row: 2fr 1fr;
+    justify-items: center;
+}
+
+.organize__text{
+    font-family: Lora;
+    padding-bottom: 46px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 136.364%;
+    letter-spacing: 0.44px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.organize__choise{
+    display: flex;
+    gap: 106px;
+    justify-content: center;
+    align-items: center;
+}
+
+.organize__choise__btn{
+    padding: 15px 40px;
+    border: 1px solid #1F1E1E;
+    text-decoration: none;
+    color: #1F1E1E;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.organize__choise__btn-red{
+    color:  #FFF;
+    border: 0;
+    background: #BC3324;
+}
+
+.home__about-us{
+    margin-top: 208px;
+    max-width: 1334px;
+
+}
+
+.main__title{
+    margin:  0 26.612% 50px 26.612%;
+}
+
+.main__title-text{
+	box-sizing: border-box;
+    padding: 8px 45px;
+	width: 100%;
+	text-align: center;
+	background-color: #1F1E1E;
+	text-transform: uppercase;
+    font-family: "Lora";
+	font-size: 36px;
+	font-weight: 500;
+	color: white;
+}
+
+.home__container{
+	box-sizing: border-box;
+	position: relative;
+	align-items: center;
+	margin: 0 auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	max-width: 1414px;
+	width:100%;	
+}
+
+.home__about-us{
+    display: grid;
+    gap: 100px;
+}
+
+.home__about-us__text-area{
+    display: grid;
+    gap: 50px;
+}
+    
+
+.home__about-us__subtitle{
+    margin: 0;
+    font-size: 44px;
+    font-weight: 700;
+    max-width: 65.067%;
+}
+
+.home__about-us__text{
+    margin: 0 0 0 34.96%;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 64%;
+}
+
+
+.home__about-us__text-mini{
+    max-width: 29.037%;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.home__about-us__picture{
+    display: flex;
+    gap: 60px;
+    align-items: flex-end;
+}
+
+.home__about-us__picture-over{
+    margin-bottom: -15%;
+    margin-left: 66.6%;
+    position: absolute;
+}
+
+.home__about-us__watch-btn{
+    margin-top: 89px;
+}
+
+.watch-bth{
+    max-width: 25.037%;
+    text-decoration: none;
+    color: #1F1E1E;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 128px;
+}
+
+.watch-bth-text{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.home__events{
+    margin-top: 208px;
+
+}
+
+.listing{
+    margin-top: 150px;
+	display: flex;
+	gap: 60px;
+}
+
+.listing_cards-event{
+	width: 405px;
+}
+
+.cards-event{
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+}
+
+.cards-event_link{
+	display: flex;
+	flex-direction: column;
+    text-decoration: none;
+    color: #1F1E1E;
+}
+
+.cards-event_link:hover{ 
+    color: #A51505;
+	text-decoration-color: #A51505;
+    .cards-event_title{
+        text-decoration: underline;
+    }
+}
+
+.cards-event_picture{
+	position: relative;
+	display: block;
+	margin-bottom: 25px;
+}
+
+.cards-event_title{
+	margin: 0 0 auto;
+	min-height: 64px;
+	text-decoration: none;
+    transition: color 0.3s, text-decoration 0.6s;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+
+.cards-event_text{
+    position: relative;
+	margin:  15px 0;
+	font-size: 16px;
+    text-decoration: none;
+}
+
+
+.listing__slider input[name="switch"] {
+    display: none;
+  }
+  
+.listing__slider-btn {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+.listing__slider-btn-center{
+    margin-bottom: 5px;
+}
+
+
+  
+  
+
